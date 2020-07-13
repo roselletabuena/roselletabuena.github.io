@@ -7,15 +7,11 @@
     
     <script src="https://kit.fontawesome.com/97f43705d1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dimmer.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" rel="stylesheet">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <link rel="stylesheet" href="style/app2.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/RT Official.png">
+    <link rel="stylesheet" href="style/app.css">
 </head>
 <body>
 
@@ -37,15 +33,15 @@
                     <tbody>
                       <tr>
                         <td>
-                            <a  target="_blank" href="https://www.facebook.com/iamDete17">
+                            <a  target="_blank" href="https://www.facebook.com/roselle.tabuena17">
                             <i class="fab fa-facebook-f"></i>
                             </a>
                         </td>
-                        <td><a  target="_blank" href="https://www.linkedin.com/in/roselle-tabuena-00a933133/">
+                        <td><a  target="_blank" href="https://www.linkedin.com/in/roselletabuena/"">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                          </td>
-                        <td><a  target="_blank" href="https://github.com/iamDete">
+                        <td><a  target="_blank" href="https://github.com/roselletabuena">
                             <i class="fab fa-github"></i>
                         </a>
                         </td>
@@ -64,13 +60,15 @@
 
         <div class="container pt-3">
 
-            <div class="float-left">
+            <div class="float-left ">
                 <span class="brand p-1">
-                    RT
+                    <img src="img/RT Official.png" alt="logo" srcset="">
                 </span>
+
+           
             </div>
 
-
+       
             <button id="menu" class="hamburger float-right hamburger--collapse" type="button">
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
@@ -78,6 +76,7 @@
             </button>
 
         </div>
+
     </div>
 
 
@@ -90,26 +89,21 @@
 
                 <div class="col-md-12 d-flex align-items-center"  style="height: 90vh">
                     <div>
-                        <h1 class="display-1 pink">Roselle Tabuena</h1>
-                        <p class="intro">
+                        <h1 class="display-1 pink animate__animated animate__fadeIn animate__slow animate__delay-1s">Roselle Tabuena</h1>
+                        <p class="intro animate__animated animate__fadeInLeft  animate__slow animate__delay-2s">
                             I enjoy creating intuitive web and mobile app.
                         </p>
 
-    
+                        <div class="btn-group mt-3 ml-md-2 animate__animated animate__fadeInUp  animate__slow animate__delay-3s" role="group" aria-label="Basic example">
+                      
+                            <a href="static/Roselle Tabuena Updated Resume.pdf" download="Resume_Roselle_Tabuena.pdf" class="btn px-md-3  py-md-2 btn-black mx-auto cmn-t-pulse shadow">Download Resume <i class="ml-2 fas fa-file-download"></i></a>
+                        </div>
 
-                    
-                        <button type="button" id="resume"
-                         class="btn px-md-5 py-md-3 mt-3 btn-black mx-auto cmn-t-pulse shadow">
-                            Download Resume
-                        </button>
-               
-
-                        
-                        
+              
                     </div>
                     
                 </div>
-                <div class="mx-auto d-flex align-items-end pb-5"  style="height: 10vh">
+                <div class="mx-auto d-flex align-items-end pb-5" style="height: 10vh">
     
                     <div class="mt-auto">
                         <span class="mouse mb-2">
@@ -119,25 +113,20 @@
                  
                 </div>
 
+
             </div>
         </div>
-        <div class="ui modal" align="center">
-            <i class="close icon"></i>
-            <div id="resume-view">
-
-        </div>
-         
     </header>
 
     <section id="skills"> 
 
-        <div class="container mt-5">
-            <h1 class="text-center text-uppercase section-text">Skills</h1>
-            <hr class="w-50">
+        <div class="container pt-5">
+            <h1 class="text-center text-uppercase section-text" data-aos="fade-up"   data-aos-delay="500"  data-aos-duration="1000">Skills</h1>
+            <!-- <hr class="w-50"> -->
             <div class="row  mt-md-5">
-                <div class="col-md-6 px-md-5">
-    
-                        <h3 class="mb-3">Programming Languages</h3>
+                <div class="col-md-6 px-md-5"  data-aos-delay="500"  data-aos="zoom-in-up" data-aos-duration="1000">
+                    
+                    <h3 class="mb-3">Programming Languages</h3>
 
                     <div>
                         <h5>JavaScript</h5>
@@ -193,7 +182,7 @@
                         
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6"  data-aos-delay="800"   data-aos="zoom-in-up" data-aos-duration="1000">
 
                     <h3>Database</h3>
                     <p>Mongo, Firebase, MySQL</p>
@@ -204,7 +193,7 @@
                     <p>node.js, PHP</p>
                     <h3>Frontend</h3>
                     <p>Bootstrap, Materialize, Semantic UI,CSS</p>
-                    <small>currently learning react.js in udemy</small>
+                    <small>Currently learning modern javascript and react.js in udemy</small>
 
                 </div>
 
@@ -212,97 +201,195 @@
         </div>
     </section>
 
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon fill="rgb(255, 240, 240)" points="0,100 100,0 100,100"/>
-    </svg> -->
 
 
-
-    <section id="projects" class="bg-primary" >
+    <section id="projects">
 
         <div class="container">
-            <h1 class="text-center text-uppercase section-text">PROJECTS</h1>
-            <hr class="w-50">
-            <div class="row m-large">
-              
-                    <div class="col-md-3 col-sm-6">
-                        <a class="nav-link d-flex align-items-center light-blue-bg"
-                        href="#home"
-                        aria-controls="home">
-                            <img src="img/twitter.png" class="img-fluid mx-auto small" alt="twitterments-logo">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a class="nav-link green-bg d-flex align-items-center" 
-                        href="#profile" 
-                        aria-controls="profile">
-                            <img src="img/logo-only.png" class="img-fluid mx-auto small" alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a class="nav-link red-bg d-flex align-items-center" 
-                        href="#settings" 
-                        aria-controls="settings">
-                        <img src="img/M.png" class="img-fluid mx-auto small" alt="">
-                        </a>
-                    </div>
+            <h1 class="text-center text-uppercase section-text mb-5" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">PROJECTS</h1>
 
-                    <div class="col-md-3 col-sm-6">
-                        <a class="nav-link white-bg d-flex align-items-center" 
-                        href="#settings" 
-                        aria-controls="settings">
-                            <img src="img/more.png" class="img-fluid ting mx-auto small" alt="">
-                        </a>
+            <div class="row">
+              
+                <div class="col-md-4  col-sm-6 mb-2">
+                    
+                    <div class="card"
+                    data-aos-duration="1000"
+                    data-aos-delay="800"
+                    data-aos="fade-down" >
+                        <img src="img/logo-only.png" class="img-fluid card-img-top w-75 mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">SIM HORTUS (THESIS)</h5>
+                          <p class="card-text">An enhanced micro-garden for personal indoor use which gives small ...</p>
+                          <button type="button" class="btn btn-outline-primary"  data-toggle="modal" data-target="#simhortus">Read more...</button> 
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="col-md-4  col-sm-6 mb-2">
+                    <div class="card" 
+                    data-aos-duration="1000"
+                    data-aos-delay="1200"
+                    data-aos="fade-up">
+                        <img src="img/twitter.png" class="img-fluid card-img-top w-75 mx-auto">
+
+                        <div class="card-body sticky">
+                            <h5 class="card-title">Twitterments</h5>
+                            <p class="card-text">Analyze each tweet to see how positive or negative its emotion is.</p>
+                            <a href="http://twitterments.pythonanywhere.com/" target="_blank"class="btn btn-outline-primary">Visit site...</a>
+                        </div>
                     </div>
+                </div>
+                    
+
+                <div class="col-md-4 col-sm-6  mb-2" 
+                data-aos-duration="1000"
+                data-aos-delay="800"
+                data-aos="fade-down" >
+                    <div class="card">
+                        <img src="img/M.png" class="img-fluid card-img-top w-75 mx-auto">
+                        <div class="card-body sticky">
+                            <h5 class="card-title">MERJ</h5>
+                            <p class="card-text">E-commerce from scratched stack used HTML, CSS, JavaScript, PHP</p>
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#merj">See images...</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
     </section>
 
 
     
-    <section id="contact" >
+    <section id="contact" class="py-5" >
 
         <div class="container">
 
             <div class="row">
 
-                <div class="col-md-8">
-                    <h4>Send me a message :)</h4>
+                <div class="col-md-12">
+                    
+                    <div  data-aos="fade-up" class="paper-card p-3 w-75 mx-auto p-md-5">
 
-                    <form>
-                        <div class="form-group">
-                          <input type="email" class="form-control" placeholder="Your email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Type your message here"id="exampleFormControlTextarea1" rows="10"></textarea>
-                          </div>
-                        <button type="submit" class="btn form-control btn-primary">Submit</button>
-                    </form>
+                        <h4 class="mb-5 text-center">get in touch</h4>
+    
+                        <form id="messageForm">
+                            <div class="form-group">
+                              <input name="email" type="email" class="form-control" placeholder="Your email" required>
+                            </div>
+                            <div class="form-group">
+                                <input name="fullname" type="text" class="form-control" placeholder="Your full name" required>
+                              </div>
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" placeholder="Type your message here" rows="8" required></textarea>
+                              </div>
+                              <div class="text-center">
 
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="LI-profile-badge" align="center" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="roselle-tabuena-00a933133"><a class="LI-simple-link" href='https://ph.linkedin.com/in/roselle-tabuena-00a933133?trk=profile-badge'>Roselle Tabuena</a></div>
+                                  <button type="submit" class="btn shadow-lg px-5 mx-auto btn-primary">send message</button>
+                              </div>
+                        </form>
+               
+                    </div>
 
                 </div>
 
             </div>
             
+            
         </div>
 
+
     </section>
+
+    <div class="modal fade" id="simhortus" aria-hidden="true">
+    
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    
+                    <i class="fa fa-times close float-right text-white mb-2" data-dismiss="modal" aria-label="Close" aria-hidden="true"></i>
+                   
+                    <div class="ratio">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/yQ2U4TEYsME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://medium.com/@roselleroxtabuena/smart-indoor-micro-garden-6135eb498f6">For more information click here</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="merj"  tabindex="-1" role="dialog" aria-hidden="true">
+    
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="header">   <i class="fa fa-times close float-right text-white p-3" data-dismiss="modal" aria-label="Close" aria-hidden="true"></i></div>
+                <div class="modal-body text-center">
+                 
+                    <div id="carouselExampleIndicators" class="carousel slide"  data-aos-delay="1000"  data-aos-duration="1500" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/projects/merj-1.png" class="img-fluid">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/projects/merj-3.png" class="img-fluid">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/projects/merj-4.png" class="img-fluid">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/projects/merj-5.png" class="img-fluid">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/projects/merj-6.png" class="img-fluid">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dimmer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/macy/2.5.1/macy.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
-    <script src="controllers/app.style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCgklNlA7QCsfuu_c1iukApDU1yXt3x8i8",
+            authDomain: "messageme-94416.firebaseapp.com",
+            databaseURL: "https://messageme-94416.firebaseio.com",
+            projectId: "messageme-94416",
+            storageBucket: "messageme-94416.appspot.com",
+            messagingSenderId: "369254923375",
+            appId: "1:369254923375:web:fd81605b4a0d27f888619a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="controllers/app.js"></script>
 </body>
 </html>
