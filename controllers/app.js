@@ -1,10 +1,3 @@
-
-// var firebaseRef = firebase.database().ref();
-
-// firebaseRef.set("hello");
-// firebaseRef.child("hello").set("ssssss");
-
-
 $('#menu').click(function () {
     $("#menu").toggleClass("is-active");
     $(".overlay").toggleClass("d-none");
