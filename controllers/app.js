@@ -1,3 +1,4 @@
+
 $('#menu').click(function () {
     $("#menu").toggleClass("is-active");
     $(".overlay").toggleClass("d-none");
@@ -5,43 +6,21 @@ $('#menu').click(function () {
 })
 
 
-$("#btn-about").click(function() {
-    document.querySelector('#about').scrollIntoView({
-        behavior: 'smooth' 
+const navigation = (element, section) => {
+    $(element).click(function() {
+        document.querySelector(section).scrollIntoView({
+            behavior: 'smooth' 
+        });
+        $("#menu").toggleClass("is-active");
+        $(".overlay").toggleClass("d-none");
+        $(".brand-text").toggleClass("d-none");
     });
-    $("#menu").toggleClass("is-active");
-    $(".overlay").toggleClass("d-none");
-    $(".brand-text").toggleClass("d-none");
-});
+}
 
-$("#btn-skills").click(function() {
-    document.querySelector('#skills').scrollIntoView({
-        behavior: 'smooth' 
-    });
-    $("#menu").toggleClass("is-active");
-    $(".overlay").toggleClass("d-none");
-    $(".brand-text").toggleClass("d-none");
-});
-
-
-$("#btn-projects").click(function() {
-    document.querySelector('#projects').scrollIntoView({
-        behavior: 'smooth' 
-    });
-    $("#menu").toggleClass("is-active");
-    $(".overlay").toggleClass("d-none");
-    $(".brand-text").toggleClass("d-none");
-});
-
-
-$("#btn-contact").click(function() {
-    document.querySelector('#contact').scrollIntoView({
-        behavior: 'smooth' 
-    });
-    $("#menu").toggleClass("is-active");
-    $(".overlay").toggleClass("d-none");
-    $(".brand-text").toggleClass("d-none");
-});
+navigation('#btn-about', '#about')
+navigation('#btn-skills', '#skills')
+navigation('#btn-projects', '#projects')
+navigation('#btn-contact', '#contact')
 
 $('[data-toggle="tooltip"]').tooltip()
 
@@ -123,4 +102,5 @@ $("#messageForm").submit(function(event) {
     event.preventDefault();
     
 });
+
 
