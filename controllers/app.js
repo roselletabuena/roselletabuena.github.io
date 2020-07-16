@@ -9,12 +9,18 @@ $("#btn-about").click(function() {
     document.querySelector('#about').scrollIntoView({
         behavior: 'smooth' 
     });
+    $("#menu").toggleClass("is-active");
+    $(".overlay").toggleClass("d-none");
+    $(".brand-text").toggleClass("d-none");
 });
 
 $("#btn-skills").click(function() {
     document.querySelector('#skills').scrollIntoView({
         behavior: 'smooth' 
     });
+    $("#menu").toggleClass("is-active");
+    $(".overlay").toggleClass("d-none");
+    $(".brand-text").toggleClass("d-none");
 });
 
 
@@ -22,6 +28,9 @@ $("#btn-projects").click(function() {
     document.querySelector('#projects').scrollIntoView({
         behavior: 'smooth' 
     });
+    $("#menu").toggleClass("is-active");
+    $(".overlay").toggleClass("d-none");
+    $(".brand-text").toggleClass("d-none");
 });
 
 
@@ -29,12 +38,12 @@ $("#btn-contact").click(function() {
     document.querySelector('#contact').scrollIntoView({
         behavior: 'smooth' 
     });
+    $("#menu").toggleClass("is-active");
+    $(".overlay").toggleClass("d-none");
+    $(".brand-text").toggleClass("d-none");
 });
 
-
-
 $('[data-toggle="tooltip"]').tooltip()
-
 
 $('document').ready(function() {
 
@@ -46,14 +55,16 @@ $('document').ready(function() {
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > h) {
             $(".hamburger-inner").addClass('dark-bg');
-            // $(".brand img").attr("src","img/RT pink.png");
+
            $(".brand img").css('background-color', 'white');
            $(".brand img").addClass('shadow-sm');
+
         } else {
+
             $(".brand img").css('background-color', 'transparent');
             $(".brand img").removeClass('shadow-sm');
             $(".hamburger-inner").removeClass('dark-bg');
-            // $(".hamburger-inner").css('background-color', 'white');
+
         }
     });
 
