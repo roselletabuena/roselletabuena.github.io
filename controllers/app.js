@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let interval = setInterval(function(){ 
         loading.classList.add('animate__fadeOut')
         clearInterval(interval);
-     }, 1500);
+     }, 1000);
 
 })
 
