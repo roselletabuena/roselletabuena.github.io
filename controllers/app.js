@@ -1,8 +1,14 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const loading = document.querySelector('.loading')
+    loading.classList.add('d-none')
+})
+
 
 $('#menu').click(function () {
     $("#menu").toggleClass("is-active");
     $(".overlay").toggleClass("d-none");
     $(".brand-text").toggleClass("d-none");
+
 })
 
 
